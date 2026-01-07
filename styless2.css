@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #222831;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: bisque;
+}
+
+.navigation a:hover {
+  color: turquoise;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem auto;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.heroSub {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 2.5rem;
+  color: antiquewhite;
+}
+
+.title {
+  font-size: 3rem;
+  color: aqua;
+}
+
+.heroImg {
+  width: 400px;
+}
+
+/* ---------- About ---------- */
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem auto;
+  max-width: 1200px;
+  gap: 3rem;
+}
+
+.aboutmePar {
+  font-size: 1.2rem;
+  color: antiquewhite;
+}
+
+/* ---------- Works ---------- */
+.Works {
+  padding: 4rem 1rem;
+}
+
+.Works ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.Works li {
+  background: blueviolet;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.Works li img {
+  width: 150px;
+  transition: transform 0.2s;
+}
+
+.Works li:hover img {
+  transform: scale(1.1);
+}
+
+/* ---------- Contact ---------- */
+.contentContainer {
+  max-width: 1200px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.content a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  color: antiquewhite;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroImg {
+    width: 80%;
+  }
+
+  .aboutMe {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Works ul {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
